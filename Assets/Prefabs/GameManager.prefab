@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1261546786404163860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1261546786404163858}
+  - component: {fileID: 1261546786404163859}
+  - component: {fileID: 1261546786404163857}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1261546786404163858
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261546786404163860}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10, y: 10, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1261546786404163859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261546786404163860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85ef3f04565743643a1138e94f1b849d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacle: {fileID: 0}
+  enemyType:
+  - {fileID: 6378111175786120881, guid: 47e11bdf5f50c3245bceb8b6e6404e6e, type: 3}
+  - {fileID: 3564094630021190822, guid: c9db89a1a2488eb4f911342d2cf0ad24, type: 3}
+  - {fileID: 4257023174398143065, guid: a8f01f93c1ce4684299f81cc1b1f7e8e, type: 3}
+  numOfEnemies: 0
+  numOfObjects: 0
+  playerPrefab: {fileID: 7156324776124161248, guid: 9455ba8720a97494e98ef9e9c61cea73, type: 3}
+--- !u!114 &1261546786404163857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261546786404163860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2121a278de3013a42a761d3de1418d35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  width: 1
+  height: 1
+  ld_corner: {fileID: 11400000, guid: e8f78cefe22cf934484b4831c1071d8c, type: 2}
+  lu_corner: {fileID: 11400000, guid: e22e276a38aa77f47a72b8b43fe31f02, type: 2}
+  rd_corner: {fileID: 11400000, guid: e679282cb6f04ab42bd43f1e3584ccae, type: 2}
+  ru_corner: {fileID: 11400000, guid: 3e5d00984f925234ba71ef5d6e78f222, type: 2}
+  l_wall: {fileID: 11400000, guid: ffa0fd837a334c745b79e0e3d08d8355, type: 2}
+  r_wall: {fileID: 11400000, guid: b4a32b73660eae64a997978b36d43864, type: 2}
+  wall: {fileID: 11400000, guid: 14e743e04b2c1cb4f8328adcc94917b9, type: 2}
+  woodFloor: {fileID: 11400000, guid: a65e391a6e6cee34c920ee0f74c2ba0b, type: 2}
+  floor: {fileID: 0}
+  elevation: {fileID: 0}
